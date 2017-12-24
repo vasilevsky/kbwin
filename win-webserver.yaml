@@ -21,18 +21,17 @@ spec:
   selector:
     matchLabels:
       app: win-webserver
-  replicas: 2 # tells deployment to run 2 pods matching the template
-  template: # create pods using pod definition in this template
+  replicas: 2
+  template:
     metadata:
-      # unlike pod-nginx.yaml, the name is not included in the meta data as a unique name is
-      # generated from the deployment name
       labels:
         app: win-webserver
     spec:
       containers:
-      - name: windowswebserver
+      - imagePullPolicy: IfNotPresent
+        name: windowswebserver
         image: microsoft/iis
-      - ports:
+        ports:
         - hostPort: 4444
           containerPort: 80
       nodeSelector:
