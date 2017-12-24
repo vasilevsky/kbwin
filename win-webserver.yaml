@@ -23,7 +23,7 @@ spec:
   template:
     metadata:
       labels:
-        app: win-webserver
+        app: "win-webserver"
     spec:
       containers:
       - imagePullPolicy: IfNotPresent
