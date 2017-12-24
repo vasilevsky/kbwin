@@ -20,10 +20,6 @@ metadata:
     app: win-webserver
   name: win-webserver
 spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: win-webserver
   template:
     metadata:
       labels:
