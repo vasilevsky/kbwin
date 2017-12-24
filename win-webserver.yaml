@@ -28,7 +28,6 @@ spec:
     metadata:
       labels:
         app: win-webserver
-      name: win-webserver
     spec:
       containers:
       - imagePullPolicy: IfNotPresent
