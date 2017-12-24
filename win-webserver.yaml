@@ -30,8 +30,7 @@ spec:
         app: win-webserver
     spec:
       containers:
-      - imagePullPolicy: IfNotPresent
-        name: windowswebserver
+      - name: windowswebserver
         image: microsoft/iis
       - ports:
         - hostPort: 4444
