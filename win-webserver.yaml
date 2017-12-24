@@ -16,9 +16,9 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: win-webserver
   labels:
     app: win-webserver
-  name: win-webserver
 spec:
   template:
     metadata:
