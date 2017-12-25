@@ -6,7 +6,6 @@ metadata:
     app: nginx-web
 spec:
   ports:
-    # the port that this service should serve on
   - port: 7777
     targetPort: 80
   selector:
