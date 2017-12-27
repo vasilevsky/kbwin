@@ -32,7 +32,6 @@ spec:
         name: windowswebserver
         image: microsoft/iis
         ports:
-        - hostPort: 4444
-          containerPort: 80
+        - containerPort: 80
       nodeSelector:
         beta.kubernetes.io/os: windows
