@@ -8,10 +8,10 @@ spec:
   ports:
     # the port that this service should serve on
   - port: 80
-    targetPort: 80
+    targetPort: 8081
   selector:
     app: win-webserver
-  type: LoadBalancer
+  type: NodePort
 ---
 apiVersion: apps/v1beta2
 kind: Deployment
